@@ -1,0 +1,197 @@
+{
+  "intervals": {
+    "1": [
+      -46.6,
+      29.3
+    ],
+    "2": [
+      -63.3,
+      54.7
+    ],
+    "3": [
+      -83.5,
+      65.4
+    ]
+  },
+  "fire_ablation": {
+    "all_year": {
+      "with_fires": 35.96,
+      "without_fires": 35.57,
+      "improvement_pct": -1.1
+    },
+    "stubble_season": {
+      "with_fires": 67.84,
+      "without_fires": 67.38,
+      "improvement_pct": -0.7
+    }
+  },
+  "data_source": "real",
+  "test_start": "2019-07-01",
+  "test_end": "2020-07-01",
+  "horizons": {
+    "1": {
+      "baseline": {
+        "mae": 31.64,
+        "rmse": 45.61
+      },
+      "ridge": {
+        "mae": 27.98,
+        "rmse": 38.18
+      },
+      "lightgbm": {
+        "mae": 24.32,
+        "rmse": 33.95
+      }
+    },
+    "2": {
+      "baseline": {
+        "mae": 48.39,
+        "rmse": 68.81
+      },
+      "ridge": {
+        "mae": 41.88,
+        "rmse": 57.06
+      },
+      "lightgbm": {
+        "mae": 37.65,
+        "rmse": 53.7
+      }
+    },
+    "3": {
+      "baseline": {
+        "mae": 57.45,
+        "rmse": 82.41
+      },
+      "ridge": {
+        "mae": 48.27,
+        "rmse": 65.46
+      },
+      "lightgbm": {
+        "mae": 45.9,
+        "rmse": 63.49
+      }
+    }
+  },
+  "models": [
+    {
+      "name": "Naive baseline",
+      "detail": "Tomorrow is the same as today",
+      "mae": 45.83
+    },
+    {
+      "name": "Ridge regression",
+      "detail": "Linear model on the same features",
+      "mae": 39.38
+    },
+    {
+      "name": "LightGBM",
+      "detail": "Gradient boosting, the model in use",
+      "mae": 35.96,
+      "chosen": true
+    }
+  ],
+  "stubble_season_mae": {
+    "baseline": {
+      "1": 57.83,
+      "2": 87.51,
+      "3": 112.96
+    },
+    "lightgbm": {
+      "1": 38.27,
+      "2": 74.14,
+      "3": 91.1
+    }
+  },
+  "importance": [
+    {
+      "factor": "Recent pollution",
+      "share": 0.684
+    },
+    {
+      "factor": "Wind",
+      "share": 0.098
+    },
+    {
+      "factor": "Temperature",
+      "share": 0.091
+    },
+    {
+      "factor": "Stubble fires",
+      "share": 0.048
+    },
+    {
+      "factor": "Rain",
+      "share": 0.048
+    },
+    {
+      "factor": "Season",
+      "share": 0.032
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "pm25_lag0",
+      "mean_abs_shap": 32.71
+    },
+    {
+      "feature": "aqi_lag0",
+      "mean_abs_shap": 26.67
+    },
+    {
+      "feature": "aqi_roll7",
+      "mean_abs_shap": 21.43
+    },
+    {
+      "feature": "aqi_roll3",
+      "mean_abs_shap": 8.03
+    },
+    {
+      "feature": "wind_speed_h",
+      "mean_abs_shap": 6.62
+    },
+    {
+      "feature": "tmax_h",
+      "mean_abs_shap": 5.74
+    },
+    {
+      "feature": "tmin_0",
+      "mean_abs_shap": 5.53
+    },
+    {
+      "feature": "precip_0",
+      "mean_abs_shap": 4.52
+    }
+  ],
+  "features": [
+    "aqi_lag0",
+    "aqi_lag1",
+    "aqi_lag2",
+    "aqi_lag3",
+    "aqi_lag4",
+    "aqi_lag5",
+    "aqi_lag6",
+    "aqi_roll3",
+    "aqi_roll7",
+    "pm25_lag0",
+    "pm10_lag0",
+    "fire_lag0",
+    "fire_lag1",
+    "fire_lag2",
+    "fire_lag3",
+    "fire_3d",
+    "fire_7d",
+    "frp_3d",
+    "wind_speed_0",
+    "wind_nw_0",
+    "tmin_0",
+    "tmax_0",
+    "precip_0",
+    "wind_speed_h",
+    "wind_nw_h",
+    "tmin_h",
+    "tmax_h",
+    "precip_h",
+    "doy_sin_h",
+    "doy_cos_h"
+  ]
+}

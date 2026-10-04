@@ -1,0 +1,8 @@
+{
+  "source": "real",
+  "synthetic_files": [],
+  "start": "2015-01-01",
+  "end": "2020-07-01",
+  "days": 2009,
+  "missing_aqi_days": 0
+}
