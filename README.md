@@ -1,8 +1,8 @@
-# PyroAQ
+# AirSentinel
 
 **Stubble burning-aware AQI forecasting and health alerts for Delhi-NCR.**
 
-Every autumn, farmers in Punjab and Haryana burn rice stubble, and the smoke drifts to Delhi. PyroAQ watches those fires from NASA satellite data, combines them with weather and past air quality, and forecasts Delhi's AQI up to three days ahead. It then explains *why* the air is bad (SHAP) and turns the forecast into simple health advice for children, older adults and people with breathing conditions.
+Every autumn, farmers in Punjab and Haryana burn rice stubble, and the smoke drifts to Delhi. AirSentinel watches those fires from NASA satellite data, combines them with weather and past air quality, and forecasts Delhi's AQI up to three days ahead. It then explains *why* the air is bad (SHAP) and turns the forecast into simple health advice for children, older adults and people with breathing conditions.
 
 | Layer | Tech |
 |---|---|
@@ -113,14 +113,14 @@ The app **replays a past day** (by default 2 November of the latest year in the 
 * The CPCB Kaggle data ends in mid-2020, so the app replays history rather than forecasting today. Making it live needs a real-time AQI source (for example data.gov.in) and the FIRMS near-real-time feed.
 * Fire counts cover a fixed box around Punjab and Haryana, not exact state borders.
 * Hourly advice uses a typical daily pattern, not an hourly forecast.
-* PyroAQ gives general information, not medical advice.
+* AirSentinel gives general information, not medical advice.
 
 ---
 
 ## Project structure
 
 ```
-PyroAQ/
+AirSentinel/
 ├── backend/
 │   ├── app/            FastAPI app: routes, forecasting service, AQI bands, advice rules
 │   ├── ml/             data download, demo data, dataset builder, features, training

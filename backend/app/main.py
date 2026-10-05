@@ -1,4 +1,4 @@
-"""PyroAQ API.
+"""AirSentinel API.
 
 Run locally:  uvicorn app.main:app --reload --port 8000
 Docs:         http://localhost:8000/docs
@@ -20,7 +20,7 @@ except ImportError:
 from .advice import PROFILES
 from .service import NotReady, Service
 
-app = FastAPI(title="PyroAQ API", version="1.0.0",
+app = FastAPI(title="AirSentinel API", version="1.0.0",
               description="Stubble burning-aware AQI forecasts and health alerts for Delhi-NCR.")
 
 origins = [o.strip() for o in os.getenv("ALLOWED_ORIGINS", "*").split(",") if o.strip()]

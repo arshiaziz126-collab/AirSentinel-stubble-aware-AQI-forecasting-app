@@ -14,7 +14,7 @@ export default function Footer({ data }) {
   return (
     <footer className="foot" data-pal="wine">
       <div className="wrap">
-        <div className="mark" ref={mark} aria-hidden="true">PyroAQ</div>
+        <div className="mark" ref={mark} aria-hidden="true">AirSentinel</div>
         <div className="foot-row">
           <span>Replaying {longDate(data.as_of)}. Data from CPCB, NASA FIRMS and Open-Meteo.</span>
           <span>General information, not medical advice.</span>

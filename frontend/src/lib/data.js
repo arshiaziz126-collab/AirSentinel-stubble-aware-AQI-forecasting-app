@@ -6,7 +6,7 @@ async function get(path) {
   try {
     res = await fetch(BASE + path)
   } catch {
-    throw new Error("Can't reach the PyroAQ API. Start the backend (run.bat), then refresh this page.")
+    throw new Error("Can't reach the AirSentinel API. Start the backend (run.bat), then refresh this page.")
   }
   if (!res.ok) {
     let msg = `The API answered with an error (${res.status}).`

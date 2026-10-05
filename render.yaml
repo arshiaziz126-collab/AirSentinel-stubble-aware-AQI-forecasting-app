@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: pyroaq
+    name: airsentinel
     runtime: docker
     plan: free
     healthCheckPath: /api/health
