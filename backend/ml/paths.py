@@ -1,4 +1,4 @@
-"""Shared paths and constants for the AirSentinel ML pipeline."""
+"""Shared paths and constants for the PyroAQ ML pipeline."""
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[1]

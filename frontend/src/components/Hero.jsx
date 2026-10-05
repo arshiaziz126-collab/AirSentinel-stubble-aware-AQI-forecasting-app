@@ -48,7 +48,7 @@ export default function Hero({ data }) {
             ))}
           </h1>
           <p className="hero-sub">
-            AirSentinel forecasts Delhi's air three days ahead by watching stubble fires in Punjab and Haryana,
+            PyroAQ forecasts Delhi's air three days ahead by watching stubble fires in Punjab and Haryana,
             and the wind that carries their smoke.
           </p>
           <div className="hero-cta">

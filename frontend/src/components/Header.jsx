@@ -5,7 +5,7 @@ export default function Header({ data, loading, onDate }) {
   return (
     <header className="top">
       <div className="top-in">
-        <a className="brand" href="#top" onClick={go('#top')}><span className="dot" aria-hidden="true" />AirSentinel</a>
+        <a className="brand" href="#top" onClick={go('#top')}><span className="dot" aria-hidden="true" />PyroAQ</a>
         <nav className="nav" aria-label="Sections">
           <a href="#journey" onClick={go('#journey')}>How it happens</a>
           <a href="#health" onClick={go('#health')}>Your health</a>

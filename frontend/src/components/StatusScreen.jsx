@@ -2,7 +2,7 @@ export default function StatusScreen({ error, onRetry }) {
   return (
     <main className="status">
       <div className="status-in">
-        <h1>AirSentinel</h1>
+        <h1>PyroAQ</h1>
         {error ? (
           <>
             <p role="alert">{error}</p>

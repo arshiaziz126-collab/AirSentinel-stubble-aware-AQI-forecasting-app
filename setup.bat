@@ -1,7 +1,7 @@
 @echo off
 cd /d "%~dp0"
 echo.
-echo  Setting up AirSentinel. This takes a few minutes the first time.
+echo  Setting up PyroAQ. This takes a few minutes the first time.
 echo.
 where python >nul 2>nul || (echo Python is not installed. Install Python 3.11 or 3.12 from python.org and tick "Add python.exe to PATH". & pause & exit /b 1)
 where npm >nul 2>nul || (echo Node.js is not installed. Install the LTS version from nodejs.org. & pause & exit /b 1)
@@ -18,7 +18,7 @@ cd ..\frontend
 call npm install --no-audit --no-fund || goto :fail
 cd ..
 echo.
-echo  Setup finished. Double-click run.bat to start AirSentinel.
+echo  Setup finished. Double-click run.bat to start PyroAQ.
 pause
 exit /b 0
 :fail

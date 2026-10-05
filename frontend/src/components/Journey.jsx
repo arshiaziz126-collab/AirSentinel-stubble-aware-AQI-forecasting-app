@@ -240,7 +240,7 @@ export default function Journey({ data }) {
             <div className="p-copy">
               <p className="p-step" data-in>Into our lungs</p>
               <h2 className="p-h" data-in>Some people feel it first.</h2>
-              <p className="p-t" data-in>AirSentinel turns the forecast into simple advice for the people most at risk.</p>
+              <p className="p-t" data-in>PyroAQ turns the forecast into simple advice for the people most at risk.</p>
               <div style={{ marginTop: 34 }} data-in>
                 <a className="btn btn-solid" href="#health" onClick={(e) => { e.preventDefault(); scrollToTarget('#health') }}>Get health advice</a>
               </div>
