@@ -1,5 +1,6 @@
 # AirSentinel
 
+🔗 **Live demo:** https://airsentinel-4r75.onrender.com
 **Stubble burning-aware AQI forecasting and health alerts for Delhi-NCR.**
 
 Every autumn, farmers in Punjab and Haryana burn rice stubble, and the smoke drifts to Delhi. AirSentinel watches those fires from NASA satellite data, combines them with weather and past air quality, and forecasts Delhi's AQI up to three days ahead. It then explains *why* the air is bad (SHAP) and turns the forecast into simple health advice for children, older adults and people with breathing conditions.
